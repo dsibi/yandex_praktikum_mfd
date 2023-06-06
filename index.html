@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>My Chat</title>
   </head>
   <body>
-    <p>Hello {{username}}</p>
-    {{>button label='Click Me'}}
-    <div id="app"></div>
-    <!-- <script type="module" src="/main.js"></script> -->
+    <h1>My Chat</h1>
+    <form action="" method="get" class="auth">
+      <div class="auth">
+        <label for="login">Enter your login: </label>
+        <input
+          type="text"
+          name="login"
+          id="login"
+          value="login/email/phone"
+          required
+        />
+      </div>
+      <div class="auth">
+        <label for="password">Enter your password: </label>
+        <input type="password" name="password" id="password" required />
+        <p>Forgot password</p>
+      </div>
+      <div class="auth"><input type="submit" value="Log In" /><br /></div>
+    </form>
+    <div class="signUp">
+      <h3>Not a user</h3>
+      <input type="submit" value="Sign Up" />
+    </div>
   </body>
 </html>
