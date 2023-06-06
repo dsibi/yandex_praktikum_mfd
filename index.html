@@ -4,38 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/pages/main/index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Oswald:400,300"
+      type="text/css"
+    />
     <title>My Chat</title>
   </head>
   <body>
     <header>
-      <h1>My Chat</h1>
+      <a href="/"
+        ><img src="/static/img/logo.png" alt="My Chat Logo" id="logo"
+      /></a>
     </header>
-    <form action="" method="get" class="auth">
-      <div class="auth">
-        <label for="login">Enter your login: </label>
-        <input type="text" name="login" id="login" required />
-      </div>
-      <div class="auth">
-        <label for="password">Enter your password: </label>
-        <input type="password" name="password" id="password" required />
-        <p><a href="src/pages/error/404.html">Forgot password</a></p>
-      </div>
-      <div class="auth">
+    <div id="wrapper">
+      <form action="" method="get" class="auth">
+        <div class="auth">
+          <label for="login">Enter your login: </label>
+          <input type="text" name="login" id="login" required />
+        </div>
+        <div class="auth">
+          <label for="password">Enter your password: </label>
+          <input type="password" name="password" id="password" required />
+          <p><a href="src/pages/error/404.html">Forgot password</a></p>
+        </div>
+        <div class="auth">
+          <input
+            type="submit"
+            value="Log In"
+            onclick="location.href='src/pages/error/404.html'"
+          />
+          <br />
+        </div>
+      </form>
+      <div class="signUp">
+        <h3>Not a user</h3>
         <input
           type="submit"
-          value="Log In"
+          value="Sign Up"
           onclick="location.href='src/pages/error/404.html'"
         />
-        <br />
       </div>
-    </form>
-    <div class="signUp">
-      <h3>Not a user</h3>
-      <input
-        type="submit"
-        value="Sign Up"
-        onclick="location.href='src/pages/error/404.html'"
-      />
     </div>
     <script type="text/javascript">
       lgField = document.getElementById("login");
