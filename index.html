@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/static/img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/modules/auth/auth.css" type="text/css" />
     <link
       rel="stylesheet"
       href="http://fonts.googleapis.com/css?family=Oswald:400,300"
@@ -19,7 +18,7 @@
       /></a>
     </header>
     <div id="wrapper">
-      <form action="" method="get" class="auth">
+      <form action="" method="get">
         <div class="auth">
           <label for="login">Enter your login: </label>
           <input type="text" name="login" id="login" required />
@@ -27,9 +26,11 @@
         <div class="auth">
           <label for="password">Enter your password: </label>
           <input type="password" name="password" id="password" required />
-          <p><a href="src/pages/error/404.html">Forgot password</a></p>
         </div>
-        <div class="auth">
+        <div id="forgot">
+          <a href="src/pages/error/404.html">Forgot password</a>
+        </div>
+        <div id="logIn">
           <input
             type="submit"
             value="Log In"
