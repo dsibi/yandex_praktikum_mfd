@@ -1,0 +1,11 @@
+@custom-selector :--input input[type="text"], input[type="password"];
+:root {
+  --font-label-color: #444546;
+  --btn-hovered-color: #8639db;
+  --font-btn-hovered-color: #8edb39;
+}
+
+body {
+  color: var(--font-label-color);
+  font: 20px Tahoma, sans-serif;
+}

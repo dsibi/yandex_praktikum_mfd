@@ -4,11 +4,23 @@ import handlebars from "vite-plugin-handlebars";
 
 export default defineConfig({
   // root: resolve(__dirname, "src"),
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        registation: resolve(__dirname, "src/pages/registation.html"),
+      },
+    },
+  },
   plugins: [
     handlebars({
-      partialDirectory: resolve(__dirname, "src/partials"),
+      partialDirectory: resolve(__dirname, "src/components"),
       context: {
-        username: "John Doe",
+        kids: [
+          { name: "Jimmy", age: "12" },
+          { name: "Sally", age: "4" },
+        ],
+        fields: ["fdfds", "aaaa", "fdsdddd"],
       },
     }),
   ],
