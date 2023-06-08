@@ -1,4 +1,4 @@
-@custom-selector :--input input[type="text"], input[type="password"];
+@custom-selector :--inputTextPass input[type="text"], input[type="password"];
 :root {
   --font-label-color: #444546;
   --btn-hovered-color: #8639db;

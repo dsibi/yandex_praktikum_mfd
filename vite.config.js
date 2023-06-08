@@ -8,7 +8,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        registation: resolve(__dirname, "src/pages/registation.html"),
+        registation: resolve(
+          __dirname,
+          "src/pages/registration/registration.html"
+        ),
       },
     },
   },
@@ -16,11 +19,15 @@ export default defineConfig({
     handlebars({
       partialDirectory: resolve(__dirname, "src/components"),
       context: {
-        kids: [
-          { name: "Jimmy", age: "12" },
-          { name: "Sally", age: "4" },
+        fields: [
+          { label: "First Name", id: "fName" },
+          { label: "Second Name", id: "sName" },
+          { label: "Login", id: "email" },
+          { label: "Email", id: "login" },
+          { label: "Password", id: "password" },
+          { label: "Phone", id: "phone" },
         ],
-        fields: ["fdfds", "aaaa", "fdsdddd"],
+        regBtn: "Register",
       },
     }),
   ],

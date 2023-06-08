@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/default.css" />
+    <link rel="stylesheet" href="./registration.css" />
+    <title>My Chat_Registation</title>
+  </head>
+  <body>
+    {{> header/header}}
+    <!-- {{> button label="sdsafasd"}} -->
+    <!-- <ul>
+      {{#kids}}
+      <li>{{name}} is {{age}}</li>
+      {{/kids}}
+    </ul> -->
+    <div id="wrapper">
+      <form action="" method="get">
+        {{#fields}}
+        <div class="reg">
+          <label for="login">{{label}} </label>
+          <input type="text" id="{{id}}" required />
+        </div>
+        {{/fields}}
+        <div id="regBtn">
+          {{> button value=regBtn href="'../error/404.html'"}}
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/src/modules/auth/auth.js"></script>
+  </body>
+</html>
