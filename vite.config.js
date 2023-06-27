@@ -20,8 +20,8 @@ export default defineConfig({
       partialDirectory: resolve(__dirname, "src/components"),
       context: {
         fields: [
-          { label: "First Name", id: "fName" },
-          { label: "Second Name", id: "sName" },
+          { label: "First Name", id: "first_name" },
+          { label: "Second Name", id: "second_name" },
           { label: "Login", id: "email" },
           { label: "Email", id: "login" },
           { label: "Password", id: "password" },
